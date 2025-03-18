@@ -1,5 +1,31 @@
 body {
   margin: 100px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body h1 {
+  font-size: 2.5rem;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+body main .picture {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: linear-gradient(45deg, #FA9696 0%, #FD5BA8 49%, #FF75F1 100%);
+  border-radius: 8px;
+}
+
+body main header {
+  border: 2px  dashed blue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=style.css.map */
