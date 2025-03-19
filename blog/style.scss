@@ -5,18 +5,72 @@ body{
     h1{
         font-size: 2.5rem;
     }
+    .date{
+        color: #888888;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .picture{
+        flex:2;
+        background: linear-gradient(45deg, #FA9696 0%, #FD5BA8 49%, #FF75F1 100%);
+        border-radius: 8px;
+        min-height: 150px;
+    }
     main{
         display:flex;
         gap:15px;
 
-        .picture{
-            flex:2;
-            background: linear-gradient(45deg, #FA9696 0%, #FD5BA8 49%, #FF75F1 100%);
-            border-radius: 8px;
-        }
         header{
-            border: 2px  dashed blue;
             flex: 1;
+
+            .desc{
+                margin:0;
+
+            }
         }
     }
+    section{
+        display: flex
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        article{
+            width: 30%;
+            margin-bottom: 20px;
+            
+            .date{
+                margin-top: 30px;
+            }
+
+        }
+        
+    }
+}
+
+//widok dla komputerów
+@media (min-width: 1200px){
+    body{
+        main{
+            flex-direction: column
+        }
+        .picture{
+            min-height: 350px;
+        }
+    }
+}
+
+//widok dla telefonów
+@media (max-width: 768px){
+    margin: 30px;
+    body{
+        main{
+            flex-direction: column
+        }
+        section article{
+            width: unset;
+        }
+    }
+
 }
