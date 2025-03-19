@@ -31,7 +31,7 @@ body{
         }
     }
     section{
-        display: flex
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
@@ -63,8 +63,8 @@ body{
 
 //widok dla telefonów
 @media (max-width: 768px){
-    margin: 30px;
     body{
+        margin: 30px;
         main{
             flex-direction: column
         }

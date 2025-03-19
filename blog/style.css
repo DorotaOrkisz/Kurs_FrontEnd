@@ -14,20 +14,20 @@ body .date {
   margin: 0;
 }
 
-body main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 15px;
-}
-
-body main .picture {
+body .picture {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
   background: linear-gradient(45deg, #FA9696 0%, #FD5BA8 49%, #FF75F1 100%);
   border-radius: 8px;
-  margin: 0;
+  min-height: 150px;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
 }
 
 body main header {
@@ -38,5 +38,52 @@ body main header {
 
 body main header .desc {
   margin: 0;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section article {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+body section article .date {
+  margin-top: 30px;
+}
+
+@media (min-width: 1200px) {
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .picture {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 30px;
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section article {
+    width: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */
