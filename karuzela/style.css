@@ -1,15 +1,41 @@
+body{
+    max-width: 1200px;
+}    
 
+header{
+    text-align: center;
+}
 
-body section{
-    border: 1px solid red;
+.carousel-wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+.carousel{
+    position: relative;
+    flex: 1;
 }
 
-
-body div{
-    border: 1px solid blue;
+.carousel-item{
+    position: absolute;
+    height: 100%;
 }
-.box img{
-    width: 30%;
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow{
+    min-width: 10vw;
+    background: #000000a3;
+    color: white;
+    cursor: pointer;
+    
 }
