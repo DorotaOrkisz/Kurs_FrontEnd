@@ -1,0 +1,15 @@
+
+
+body section{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+body div{
+    border: 1px solid blue;
+}
+.box img{
+    width: 30%;
+}
