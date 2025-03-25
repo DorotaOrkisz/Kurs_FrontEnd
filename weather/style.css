@@ -1,0 +1,22 @@
+header{
+    text-align: center;
+}
+
+.weather{
+    border: 1px solid rgb(38, 211, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 1px solid rgb(211, 26, 140);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather-forecast{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
