@@ -1,22 +1,40 @@
-header{
-    text-align: center;
-}
-
-.weather{
-    border: 1px solid rgb(38, 211, 26);
-    display: flex;
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    min-height: 100vh;
+    margin:0;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  
+  h1{
+    margin:0;
+  }
+  
+  main{
+    flex:1;
+    display:flex;
     justify-content: center;
-    align-items: ;
-}
-
-.container{
-    border: 1px solid rgb(211, 26, 140);
+  }
+  
+  .weather-item{
+    border:2px solid blue;
+    display:flex;
+    gap:10px;
+    justify-content: center;
+  }
+  
+  .weather-image{
+    width: 75px;
+  }
+  
+  .forecast-wrapper{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.weather-forecast{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    border:1px solid #000;
+    overflow-x: auto;
+    gap:10px;
+  }
